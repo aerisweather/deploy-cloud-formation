@@ -3,13 +3,23 @@
   "version": "0.0.0",
   "description": "Easily deploy and update CloudFormation templates",
   "main": "dist/lib/main.js",
+  "types": "dist/lib/main.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepublish": "tsc"
   },
   "keywords": [
     "AWS",
     "CloudFormation"
   ],
   "author": "Edan Schwartz <eschwartz@aerisweather.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/aws-sdk": "0.0.42",
+    "@types/lodash": "^4.14.50",
+    "@types/node": "^7.0.3",
+    "aws-sdk": "^2.7.27",
+    "lodash": "^4.17.4",
+    "typescript": "^2.1.5"
+  }
 }
