@@ -1,0 +1,15 @@
+{
+  "name": "@aerisweather/deploy-cloud-formation",
+  "version": "0.0.0",
+  "description": "Easily deploy and update CloudFormation templates",
+  "main": "dist/lib/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AWS",
+    "CloudFormation"
+  ],
+  "author": "Edan Schwartz <eschwartz@aerisweather.com>",
+  "license": "MIT"
+}
