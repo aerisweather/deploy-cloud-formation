@@ -1,6 +1,6 @@
 {
   "name": "@aerisweather/deploy-cloud-formation",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Easily deploy and update CloudFormation templates",
   "main": "dist/lib/main.js",
   "types": "dist/lib/main.d.ts",
