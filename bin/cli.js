@@ -1,10 +1,12 @@
+#!/usr/bin/env node
+
 /**
  * Note that this is NOT a TypeScript file,
  * because referencing binaries in the package.json
  * which are generated in `prepublish` doesn't work so well.
  */
 const Cli = require('admiral-cli');
-const deployCloudFormation = require('../dist/main');
+const deployCloudFormation = require('@aerisweather/deploy-cloud-formation').default;
 
 const params = new Cli()
   .option({
