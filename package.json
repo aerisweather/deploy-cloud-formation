@@ -2,8 +2,8 @@
   "name": "@aerisweather/deploy-cloud-formation",
   "version": "1.0.0",
   "description": "Easily deploy and update CloudFormation templates",
-  "main": "dist/lib/main.js",
-  "types": "dist/lib/main.d.ts",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "scripts": {
     "build": "tsc",
     "prepublish": "tsc"
@@ -23,9 +23,7 @@
     "@types/node": "^7.0.3",
     "aws-sdk": "^2.7.27",
     "lodash": "^4.17.4",
-    "typescript": "^2.1.5"
-  },
-  "devDependencies": {
+    "typescript": "^2.1.5",
     "admiral-cli": "^0.12.0"
   }
 }
