@@ -18,10 +18,23 @@ So nothing too fancy. But it turns out that this is kind of tricky using the AWS
 npm install --save-dev @aerisweather/deploy-cloud-formation
 ```
 
-## Example Usage
+## Usage
+
+### with the CLI tool
+
+The simplest way to deploy a CloudFormation template is using the CLI tool:
+
+```
+node_modules/.bin/deploy-cloud-formation \
+  --template ./my-cloud-formation-template.json \
+  --stackName MyStack \
+  --region us-east-1
+```
+
+### with the node module
 
 ```typescript
-import deployCloudFormation from '@aerisweather/deploy-cloud-formation';
+const deployCloudFormation = require('@aerisweather/deploy-cloud-formation').default;
 
 const template = {
   "Resources": {
