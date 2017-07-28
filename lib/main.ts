@@ -54,7 +54,7 @@ async function deployCloudFormation(opts:{
 export default deployCloudFormation;
 
 
-async function createStack(opts: {
+export async function createStack(opts: {
   stackName: string;
   template: string;
   region: string;
@@ -75,7 +75,7 @@ async function createStack(opts: {
   console.log(`Creating stack.... done!`);
 }
 
-async function createChangeSet(opts: {
+export async function createChangeSet(opts: {
   region: string;
   stackName: string;
   changeSetName?: string;
@@ -111,7 +111,7 @@ async function createChangeSet(opts: {
   return changeSetRes;
 }
 
-async function executeChangeSet(opts: {
+export async function executeChangeSet(opts: {
   region: string;
   stackName: string;
   changeSetName: string;
@@ -140,7 +140,7 @@ async function executeChangeSet(opts: {
   console.log(`Executing change set: ${opts.changeSetName}... done!`);
 }
 
-async function stackExists(stackName: string) {
+export async function stackExists(stackName: string) {
   const cf = new CloudFormation({ region: 'us-east-1' });
   try {
     await cf.describeStacks({
